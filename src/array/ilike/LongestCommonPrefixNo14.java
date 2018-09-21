@@ -1,4 +1,4 @@
-package array;
+package array.ilike;
 
 import java.util.Arrays;
 
@@ -26,5 +26,6 @@ public class LongestCommonPrefixNo14 {
                 return result.toString();
         }
         return result.toString();
+
     }
 }
