@@ -1,4 +1,4 @@
-package dfs.ilike;
+package dfs.easy;
 
 import java.util.Arrays;
 
