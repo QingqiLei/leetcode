@@ -1,4 +1,6 @@
-package tree;
+package tree.easy;
+
+import tree.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;
