@@ -1,4 +1,4 @@
-package linkedlist;
+package tree.easy;
 
 import tree.TreeNode;
 
