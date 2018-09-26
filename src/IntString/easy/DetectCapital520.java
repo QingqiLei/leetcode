@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 public class DetectCapital520 {
     public boolean detectCapitalUse(String word) {
