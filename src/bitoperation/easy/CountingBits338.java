@@ -1,4 +1,4 @@
-package IntString.ilike;
+package bitoperation.easy;
 
 import java.util.Arrays;
 
