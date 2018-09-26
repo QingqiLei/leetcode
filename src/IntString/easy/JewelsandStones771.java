@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 public class JewelsandStones771 {
     public int numJewelsInStones(String J, String S) {
