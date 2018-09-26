@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 public class AddBinary67 {
     public static String addBinary(String a, String b){
