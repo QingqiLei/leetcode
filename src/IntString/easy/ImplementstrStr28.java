@@ -1,4 +1,4 @@
-package IntString.ilike;
+package IntString.easy;
 
 /**
  * What should we return when needle is an empty string? This is a great question to ask during an interview.
@@ -22,6 +22,7 @@ public class ImplementstrStr28 {
 
     public static void main(String[] args) {
         System.out.println(strStr("aaac", "aac"));
+
 
     }
 }
