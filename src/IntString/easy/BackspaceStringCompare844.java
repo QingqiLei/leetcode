@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 import java.util.ArrayList;
 import java.util.List;
