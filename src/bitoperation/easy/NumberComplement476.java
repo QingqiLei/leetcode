@@ -1,4 +1,4 @@
-package bitoperation;
+package bitoperation.easy;
 
 public class NumberComplement476 {
     public int findComplement(int num){
@@ -6,4 +6,6 @@ public class NumberComplement476 {
         return ~num & ((Integer.highestOneBit(num)<<1)-1);
 
     }
+
+
 }
