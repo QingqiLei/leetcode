@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 public class ReverseIntegerNo7 {
     public int reverse(int x) {
