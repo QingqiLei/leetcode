@@ -20,7 +20,6 @@ public class SearchinaBinarySearchTree700 {
             return searchBST(root.right, val);
         else if (root.val > val && root.left != null)
             return searchBST(root.left, val);
-
         return null;
     }
 
