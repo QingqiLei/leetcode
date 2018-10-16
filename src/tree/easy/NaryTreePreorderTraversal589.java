@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * the difference of preorder and postorder is not noly the order of operation and recursion, also can go to left firstly or go the the right firstly
+ */
 public class NaryTreePreorderTraversal589 {
     List<Integer> list = new ArrayList<>();
 
