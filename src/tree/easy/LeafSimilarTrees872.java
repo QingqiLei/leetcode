@@ -1,5 +1,6 @@
 package tree.easy;
 
+import java.security.KeyStore;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class LeafSimilarTrees872 {
         }
         leafSimilar(root.left, list);
         leafSimilar(root.right, list);
+
     }
 
 }
