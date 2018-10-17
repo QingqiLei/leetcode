@@ -12,7 +12,6 @@ public class TrimaBinarySearchTree669 {
         root.left = trimBST(root.left, R,L);
         root.right = trimBST(root.right, R,L);
 
-
         return root;
     }
 }
