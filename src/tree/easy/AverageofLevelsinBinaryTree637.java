@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
+ * Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
  * BFS using Queue, first in first out
  */
 public class AverageofLevelsinBinaryTree637 {
