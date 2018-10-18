@@ -20,7 +20,6 @@ public class AverageofLevelsinBinaryTree637 {
                 sum = sum + list.poll().val;
             }
             res.add(sum/1.0/n);
-
         }
         return res;
     }
