@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-/*
 
+/**
+ * BFS using Queue, first in first out
  */
 public class AverageofLevelsinBinaryTree637 {
     public List<Double> averageOfLevels(TreeNode root){
