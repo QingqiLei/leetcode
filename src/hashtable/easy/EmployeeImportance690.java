@@ -15,6 +15,7 @@ public class EmployeeImportance690 {
     }
 }
 
+
 class Employee {
     // It's the unique id of each node;
     // unique id of this employee
