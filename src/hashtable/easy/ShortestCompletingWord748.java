@@ -17,6 +17,7 @@ public class ShortestCompletingWord748 {
         return shortest;
     }
 
+
     private long getCharProduct(String plate) {
         long product = 1L;
         for(char c : plate.toCharArray()) {
