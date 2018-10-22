@@ -15,6 +15,7 @@ public class IslandPerimeter463 {
                 }
             }
         }
+
         return count * 4 - 2 * neighbour;
     }
 }
