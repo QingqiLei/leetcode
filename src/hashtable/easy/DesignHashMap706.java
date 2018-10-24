@@ -1,7 +1,7 @@
 package hashtable.easy;
 
 import java.util.Arrays;
-
+// length known
 public class DesignHashMap706 {
     int[] array = new int[1000000];
 
