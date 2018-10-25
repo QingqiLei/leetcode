@@ -10,7 +10,7 @@ public class HappyNumber202 {
         while (temp.add(n)) {
             squareSum = 0;
             while (n > 0) {
-                squareSum += (n % 10) * (n % 10);
+                squareSum += (n % 10) * (n % 10);  // cautious
                 n /= 10;
             }
 
