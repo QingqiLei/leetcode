@@ -1,10 +1,14 @@
-package array.ilike;
+package array.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * n number and m pairs, find the missing number,
+ * from 1 to n, the length is n, too
+ */
 public class FindAllNumbersDisappearedinanArray448 {
     public List<Integer> findDisapperaedNumbers(int[] nums) {
         List<Integer> result = new ArrayList<>();
@@ -18,10 +22,6 @@ public class FindAllNumbersDisappearedinanArray448 {
 
         }
         return result;
-
-
     }
-
-
 }
 
