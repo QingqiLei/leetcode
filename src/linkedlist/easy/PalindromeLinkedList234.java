@@ -2,6 +2,10 @@ package linkedlist.easy;
 
 import linkedlist.easy.ListNode;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class PalindromeLinkedList234 {
     public boolean isPalindrome(ListNode head) {
         ListNode slow = head, fast = head;
@@ -40,7 +44,22 @@ public class PalindromeLinkedList234 {
         ListNode newHead = reverseList(next);
         next.next = head;
         head.next = null;
+
+
         return newHead;
+    }
+
+    public static void main(String[] args) {
+        LinkedList<Integer> stack = new LinkedList<>();
+
+        stack.offer(1);
+        stack.offer(2);
+
+        System.out.println(Arrays.toString(stack.toArray()));
+
+        stack.forEach(s-> System.out.print(s + " "));
+
+
     }
 
 }
