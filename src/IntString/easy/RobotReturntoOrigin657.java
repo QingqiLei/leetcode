@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 public class RobotReturntoOrigin657 {
     public boolean judgeCircle(String moves){
