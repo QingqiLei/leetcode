@@ -1,4 +1,4 @@
-package IntString;
+package IntString.easy;
 
 /**
  *

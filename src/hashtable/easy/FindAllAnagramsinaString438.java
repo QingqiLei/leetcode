@@ -1,7 +1,9 @@
 package hashtable.easy;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
@@ -38,5 +40,11 @@ public class FindAllAnagramsinaString438 {
 
     public static void main(String[] args){
         findAnagrams("cbaebabacd","abc");
+
+
+        Map<String, Integer> map = new HashMap<>();
+        System.out.println(map.put("a",1));
+        System.out.println(map.put("a",2));
+        System.out.println(map.put("a",3));
     }
 }
