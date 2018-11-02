@@ -15,7 +15,6 @@ public class ReverseLinkedList206 {
         }
         return newHead;
     }
-
     public ListNode reverseList2(ListNode head) {
         // head->nextNode ->-> newHead,: nextNode->head, head->null
         if(head == null || head.next == null)
