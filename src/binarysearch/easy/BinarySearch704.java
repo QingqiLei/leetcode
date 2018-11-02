@@ -2,6 +2,7 @@ package binarysearch.easy;
 
 /**
  * just a binary search
+ * TTT
  */
 public class BinarySearch704 {
     public int search(int[] nums, int target) {
