@@ -1,5 +1,6 @@
 package linkedlist.easy;
 
+
 public class LinkedListCycle141 {
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;
