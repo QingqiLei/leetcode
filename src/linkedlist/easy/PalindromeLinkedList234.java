@@ -24,7 +24,6 @@ public class PalindromeLinkedList234 {
             newHead = slow;
             slow = next;
         }
-
         while (head != null && newHead != null) {
             if (head.val != newHead.val)
                 return false;
