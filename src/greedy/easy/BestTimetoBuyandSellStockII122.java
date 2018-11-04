@@ -1,4 +1,4 @@
-package array.easy;
+package greedy.easy;
 
 import java.util.HashSet;
 import java.util.Set;
