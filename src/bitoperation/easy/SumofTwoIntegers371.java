@@ -11,5 +11,6 @@ public class SumofTwoIntegers371 {
             a = a ^ b;
             b = carry << 1;
         }
+        return a;
     }
 }
