@@ -20,6 +20,5 @@ public class KthLargestinaStream703 {
             q.offer(val);
         }
         return q.peek();
-
     }
 }
