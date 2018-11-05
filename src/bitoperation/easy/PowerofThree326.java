@@ -1,5 +1,8 @@
 package bitoperation.easy;
 
+/**
+ *
+ */
 public class PowerofThree326 {
     public boolean isPowerOfThree(int n) {
         if(n > 1){
@@ -8,5 +11,4 @@ public class PowerofThree326 {
         }
         return n == 1;
     }
-
 }
