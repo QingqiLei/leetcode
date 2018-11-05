@@ -8,5 +8,4 @@ public class PowerofThree326 {
         }
         return n == 1;
     }
-
 }
