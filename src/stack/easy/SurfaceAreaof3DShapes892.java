@@ -22,8 +22,4 @@ public class SurfaceAreaof3DShapes892 {
     return res;
     }
 
-
-
-
-
 }
