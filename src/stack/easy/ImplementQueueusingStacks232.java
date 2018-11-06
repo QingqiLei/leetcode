@@ -22,7 +22,6 @@ public class ImplementQueueusingStacks232 {
         }
         return output.peek();
     }
-
     public boolean empty(){
         return input.isEmpty() && output.isEmpty();
     }
