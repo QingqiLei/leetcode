@@ -13,4 +13,18 @@ public class SumofSquareNumbers633 {
         }
         return false;
     }
+    public boolean judgeSquareSum2(int c) {
+        int left = 0;
+        int right = (int) Math.sqrt(c);
+        while(left <=right){
+            int pow = left*left+right*right;
+            if(pow >c)
+                right--;
+            else if(pow < c)
+                left++;
+            else return true;
+
+        }
+        return false;
+    }
 }
