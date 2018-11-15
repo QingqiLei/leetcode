@@ -18,4 +18,25 @@ public class BestTimetoBuyandSellStock121 {
         return profit;
 
     }
+
+    /**
+     * for each stack, we have three action, buy, sell,rest
+     *
+     * (i)no in hand  = (i-1) no in hand  ? (i-1) in hand + price
+     *
+     * (i) in hand = (i-1) in hand ? ( i -1) not in hand - price
+     *
+     *
+     * @param prices
+     * @return
+     */
+    public int maxProfit(int[] prices) {
+        int i10 = 0, i11 = Integer.MIN_VALUE;
+        for(int i: prices){
+            i10 = Math.max(i10, i11 + i);
+            i11 = Math.max(i11, -i);
+
+        }
+
+    }
 }
