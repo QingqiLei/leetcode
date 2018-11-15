@@ -31,7 +31,7 @@ public class BestTimetoBuyandSellStock121 {
      * @return
      */
 
-    public int maxProfit(int[] prices) {
+    public int maxProfit1(int[] prices) {
         int i10 = 0, i11 = Integer.MIN_VALUE;
         for(int i: prices){
             i10 = Math.max(i10, i11 + i);
