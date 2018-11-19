@@ -21,6 +21,7 @@ public class LengthofLongestFibonacciSubsequence873 {
                 }
             }
         }
+
         return max == 0 ? 0 : max + 2;
     }
 }
