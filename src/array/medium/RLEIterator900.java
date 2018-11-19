@@ -22,5 +22,4 @@ public class RLEIterator900 {
         return A[index +1];
 
     }
-
 }
