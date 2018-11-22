@@ -31,10 +31,10 @@ public class InsertDeleteGetRandom380 {
         if(map.containsKey(val)){
             int temp = map.get(val);
             list.set(temp,list.get(list.size() -1));
-            list.get(list.size())
+            map.put(list.get(temp), temp);
             list.remove(list.size() -1);
             map.remove(val);
-list.forEach(s->System.out.print(s+" "));
+
             return true;
         }
         return false;
