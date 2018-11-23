@@ -1,6 +1,8 @@
 package hashtable.easy;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class EmployeeImportance690 {
@@ -13,6 +15,24 @@ public class EmployeeImportance690 {
         manager.subordinates.forEach(subId -> getImportance(employees, subId));
         return total;
     }
+
+    Map<Integer, Employee> map;
+    public int getImportance1(List<Employee> employees, int id) {
+        map = new HashMap<>();
+        for(Employee e: employees)
+            map.put(e.id, e);
+        return dfs(id);
+    }
+
+    private int dfs(int id){
+        Employee e = map.get(id);
+        int sum = e.importance;
+        for(int i: e.subordinates)
+            sum += dfs(i);
+        return sum;
+    }
+
+
 }
 
 
