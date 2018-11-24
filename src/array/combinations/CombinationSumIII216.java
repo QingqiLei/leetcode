@@ -1,4 +1,4 @@
-package array.medium;
+package array.combinations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,6 @@ public class CombinationSumIII216 {
         if(comb.size() == k && n == 0){
             ans.add(new ArrayList<>(comb));
             return;
-
         }
 
         for(int i = start; i < 10; i++){
