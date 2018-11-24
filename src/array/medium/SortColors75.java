@@ -8,7 +8,6 @@ public class SortColors75 {
                 nums[index] = nums[p0];
                 nums[p0] = 0;
                 p0++;
-
             }
             else if(nums[index] ==2){
                 nums[index] =nums[p2];
