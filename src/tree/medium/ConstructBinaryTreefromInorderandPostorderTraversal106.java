@@ -18,6 +18,7 @@ public class ConstructBinaryTreefromInorderandPostorderTraversal106 {
                 postorder.length-1,hm);
     }
 
+
     private TreeNode buildTreePostIn(int[] inorder, int is, int ie, int[] postorder, int ps, int pe,
                                      HashMap<Integer,Integer> hm){
         if (ps>pe || is>ie) return null;
