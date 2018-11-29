@@ -17,7 +17,7 @@ public class MergeIntervals56 {
         });
         Interval curr = intervals.get(0);
         for(Interval iter: intervals){
-            if(curr.end > iter.start){
+            if(curr.end >= iter.start){
                 curr.end = Math.max(curr.end,iter.end );
             }else{
                 res.add(curr);
