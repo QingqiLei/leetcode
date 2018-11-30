@@ -8,7 +8,7 @@ public class FindFirstandLastPositionofElementinSortedArray34 {
     }
 
     private int helper(int[] nums, int target){
-        int left = 0, right = nums.length -1;
+        int left = 0, right = nums.length;
         while(left < right){    // not equal maybe better, cause when nums.length == 0, nums[0] is wrong.
             int mid = left + ((right - left) >>1);
             if(nums[mid] >=target) right = mid ;
