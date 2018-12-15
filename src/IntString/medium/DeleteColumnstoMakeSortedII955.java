@@ -26,6 +26,7 @@ public class DeleteColumnstoMakeSortedII955 {
                     break;
                 }
             }
+
             if(valid){
                 for(int i = 1; i < A.length; i++){
                     if(sorted[i] ) continue;
