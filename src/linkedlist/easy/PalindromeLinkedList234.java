@@ -18,14 +18,14 @@ public class PalindromeLinkedList234 {
             slow = slow.next;
         }
         ListNode newHead = null;
-        while (slow != null) {
+        while (slow != null) {           // rotate
             ListNode next = slow.next;
             slow.next = newHead;
             newHead = slow;
             slow = next;
         }
         while (head != null && newHead != null) {
-            if (head.val != newHead.val)
+            if (head.val != newHead.val)  // return false if they are not same
                 return false;
             head = head.next;
             newHead = newHead.next;
@@ -56,7 +56,7 @@ public class PalindromeLinkedList234 {
 
         System.out.println(Arrays.toString(stack.toArray()));
 
-        stack.forEach(s-> System.out.print(s + " "));
+//        stack.forEach(s-> System.out.print(s + " "));
 
 
     }
