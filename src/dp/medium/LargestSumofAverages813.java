@@ -1,5 +1,7 @@
 package dp.medium;
 
+import binarysearch.medium.SearchinRotatedSortedArray33;
+
 import java.util.Arrays;
 
 public class LargestSumofAverages813 {
@@ -38,6 +40,28 @@ public class LargestSumofAverages813 {
     }
 
     public static double largestSumOfAverages(int[] A, int K) {
+        int n = A.length;
+        double[][] dp = new double[K + 1][n + 1];
+        double curr = 0;
+        for (int i = 0; i < A.length; i++) {
+            curr += A[i];
+            dp[1][i + 1] = curr / (i + 1);
+
+        }
+
+        return search(n, K, A, dp);
+    }
+
+    private static double search(int n, int k, int[] A, double[][] dp) {
+        if (dp[k][n] > 0) return dp[k][n];
+        if (n < k) return 0;
+        double cur = 0;
+        for (int i = n - 1; i > 0; i--) {
+            cur += A[i];
+            dp[k][n] = Math.max(dp[k][n], search(i, k - 1, A, dp) + cur / (n - i));
+        }
+
+        return dp[k][n];
 
     }
 
