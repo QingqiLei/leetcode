@@ -18,12 +18,23 @@ public class PalindromeLinkedList234 {
             slow = slow.next;
         }
         ListNode newHead = null;
+
+        /*
+        1 -> 2(newHead)   3(slow) -> 4 ->5 -> null
+        1 <- 2(newHead)   3(slow) -> 4(next) -> 5 -> null
+        1 <- 2(newHead) <-  3(slow)  4(next) -> 5 -> null
+        1 <- 2  <- 3(newHead,slow)  4(next) -> 5 -> null
+        1 <- 2  <- 3(newHead)  4(slow) -> 5 -> null
+
+         */
+
         while (slow != null) {           // rotate
             ListNode next = slow.next;
             slow.next = newHead;
             newHead = slow;
             slow = next;
         }
+
         while (head != null && newHead != null) {
             if (head.val != newHead.val)  // return false if they are not same
                 return false;
@@ -38,7 +49,6 @@ public class PalindromeLinkedList234 {
     public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null)
             return head;
-
         ListNode next = head.next;
         ListNode newHead = reverseList(next);
         next.next = head;
