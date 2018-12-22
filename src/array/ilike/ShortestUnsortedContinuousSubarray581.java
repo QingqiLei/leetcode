@@ -6,8 +6,8 @@ package array.ilike;
  * You need to find the shortest such subarray and output its length.
  * <p>
  * unsorted order is that the front is bigger than the behind,
- * SolutionL: so, find the first element that is bigger than the behind
- * and find the last element that is smaller than the front
+ * SolutionL: so, find the first element that is bigger than the minimum of the behind
+ * and find the last element that is smaller than the maximum of the front
  */
 public class ShortestUnsortedContinuousSubarray581 {
     public static int findUnsortedSubarray(int[] A) {
