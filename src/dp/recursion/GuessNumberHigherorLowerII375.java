@@ -9,7 +9,7 @@ public class GuessNumberHigherorLowerII375 {
 
     }
     private int find(int[][] dp, int start, int end){
-        if(start >= end ) return 0; // if start == end, return 0
+        if(start >= end ) return 0; // if start >= end, return 0
         if(dp[start][end] != 0)return dp[start][end];
         int res = Integer.MAX_VALUE;
 
