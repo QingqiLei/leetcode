@@ -2,6 +2,7 @@ package array.onepass;
 // find longest substring ends with each letter
 //
 public class UniqueSubstringsinWraparoundString467 {
+    // O(N)
     public int findSubstringInWraproundString(String p) {
         int[] array = new int[26];
         int res = 0, cur = 0;
