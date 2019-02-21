@@ -1,10 +1,7 @@
 package linkedlist.easy;
 
-import linkedlist.easy.ListNode;
-
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class PalindromeLinkedList234 {
     public boolean isPalindrome(ListNode head) {

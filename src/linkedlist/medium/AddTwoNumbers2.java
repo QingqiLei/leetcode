@@ -1,7 +1,7 @@
 package linkedlist.medium;
 
 
-import linkedlist.ListNode;
+import linkedlist.easy.ListNode;
 
 public class AddTwoNumbers2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

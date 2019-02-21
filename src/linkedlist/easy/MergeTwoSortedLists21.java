@@ -69,11 +69,3 @@ public class MergeTwoSortedLists21 {
 }
 
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
