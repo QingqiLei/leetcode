@@ -7,9 +7,12 @@ public class OddEvenJump975 {
     public static void main(String[] args) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
         map.put(1, 2);
-//        map.put(2,3);
-        map.put(3, 4);
-        System.out.println(map.ceilingKey(2)); //3
+        map.put(2,3);
+
+        map.put(4,4);
+        map.put(5,5);
+        System.out.println(map.ceilingKey(3)); //4
+        System.out.println(map.floorKey(3));
     }
 
     public int oddEvenJumps(int[] A) {
