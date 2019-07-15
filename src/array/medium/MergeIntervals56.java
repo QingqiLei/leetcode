@@ -1,39 +1,24 @@
 package array.medium;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class MergeIntervals56 {
-    public List<Interval> merge(List<Interval> intervals){
-        List<Interval> res = new LinkedList<>();
-        if(intervals.size() < 2) return intervals;
-        Collections.sort(intervals, new Comparator<Interval>() {
-            @Override
-            public int compare(Interval o1, Interval o2) {
-                return o1.start - o2.start;
-            }
-        });
-        Interval curr = intervals.get(0);
-        for(Interval iter: intervals){
-            if(curr.end >= iter.start){
-                curr.end = Math.max(curr.end,iter.end );
+    public int[][] merge(int[][] intervals){
+        List<int[]> res = new ArrayList<>();
+        if(intervals.length <= 1) return intervals;
+        Arrays.sort(intervals,(a,b) -> Integer.compare(a[0],b[0]));
+        int[] curr = intervals[0];
+        res.add(curr); // 如果不先加入， 那么需要在下面for循环结束后再add()
+        for(int[] iter: intervals){
+            if(curr[1] >= iter[0]){
+                curr[1] = Math.max(curr[1],iter[1] );
             }else{
                 res.add(curr);
                 curr = iter;
-
             }
         }
-
-        res.add(curr);
-        return res;
+        return res.toArray(new int[res.size()][]);
     }
 }
 
-  class Interval {
-     int start;
-     int end;
-     Interval() { start = 0; end = 0; }
-     Interval(int s, int e) { start = s; end = e; }
- }
+
