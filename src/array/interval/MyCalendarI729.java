@@ -1,4 +1,4 @@
-package array.medium;
+package array.interval;
 
 import java.util.ArrayList;
 import java.util.List;

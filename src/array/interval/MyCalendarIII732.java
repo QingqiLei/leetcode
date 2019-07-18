@@ -1,4 +1,4 @@
-package array.hard;
+package array.interval;
 
 import java.util.TreeMap;
 

@@ -1,6 +1,7 @@
-package array.hard;
+package array.interval;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class InsertInterval57 {
@@ -21,6 +22,7 @@ public class InsertInterval57 {
             }
         }
         if(newInterval1 != null) res.add(newInterval1);
+        new HashSet<Integer>().stream().mapToInt(Integer::intValue).toArray();
         return res.toArray(new int[res.size()][]);
     }
 }
