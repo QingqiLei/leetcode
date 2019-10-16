@@ -9,7 +9,8 @@ public class MaximalSquare221 {
         for(int i = 1;i  <= matrix.length; i++)
             for(int j = 1; j <=matrix[0].length; j++){
                 if(matrix[i-1][j-1] == '1'){
-                    array[i][j] = Math.min(Math.min(array[i][j-1], array[i-1][j]), array[i-1][j-1]);
+                    // 三个正方形， 取最小的，
+                    array[i][j] = Math.min(Math.min(array[i][j-1], array[i-1][j]), array[i-1][j-1])+1;
                     res = Math.max(res, array[i][j]);
                 }
 
