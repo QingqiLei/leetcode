@@ -1,4 +1,4 @@
-package array.monotone;
+package stack.monotone;
 
 import java.util.*;
 
