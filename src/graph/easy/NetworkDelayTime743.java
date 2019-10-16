@@ -16,7 +16,7 @@ public class NetworkDelayTime743 {
         int[] distance = new int[N + 1];
         Arrays.fill(distance, Integer.MAX_VALUE);
         distance[K] = 0;
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>(); //这里是起点
         queue.add(K);
         while (!queue.isEmpty()) {
             int u = queue.poll();
